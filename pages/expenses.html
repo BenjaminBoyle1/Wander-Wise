@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWise | Expenses</title>
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <script type="module" src="/src/js/expenses.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <section class="hero card">
+      <h2>💸 Travel Expense Tracker</h2>
+      <p>Track your spending on the go and stay within your travel budget.</p>
+    </section>
+
+    <section class="card">
+      <h3>Add New Expense</h3>
+      <input type="text" id="expense-name" placeholder="Expense Name (e.g. Flight, Lunch)" />
+      <input type="number" id="expense-amount" placeholder="Amount in USD" />
+      <button class="btn" id="add-expense-btn">Add Expense</button>
+    </section>
+
+    <section class="card">
+      <h3>All Expenses</h3>
+      <ul id="expense-list" class="expense-list"></ul>
+      <p><strong>Total:</strong> $<span id="expense-total">0.00</span></p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+</body>
+</html>

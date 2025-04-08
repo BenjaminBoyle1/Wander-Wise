@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather | WanderWise</title>
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  <script type="module" src="/src/js/weather.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>🌤 Weather Forecast</h1>
+      <p>Search by city, select a trip, or use your current location</p>
+    </section>
+
+    <section class="card">
+      <div class="search-bar">
+        <input type="text" id="weather-location" placeholder="e.g., Tokyo or Paris" autocomplete="off" />
+        <button class="btn" id="get-weather-btn">Get Forecast</button>
+        <button class="btn" id="use-my-location">📍 Use My Location</button>
+      </div>
+      <ul id="suggestions" class="suggestions-list"></ul>
+    </section>
+
+    <section class="card">
+      <h3>Recent Searches</h3>
+      <div id="recent-searches" class="recent-searches"></div>
+    </section>
+
+    <section class="card">
+      <div id="weather-results" class="forecast-container empty-message">
+        <p>🔎 No forecast yet — search to begin.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "wander-wise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "serve": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.5"
+  }
+}
